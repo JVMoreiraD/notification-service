@@ -1,8 +1,10 @@
 import { randomUUID } from 'crypto';
+import { Replace } from 'src/helpers/replace';
+import { Content } from '../content/content';
 
 export interface INotificationProps {
 	recipientId: string;
-	content: string;
+	content: Content;
 	category: string;
 	readAt?: Date | null;
 	createdAt: Date;
